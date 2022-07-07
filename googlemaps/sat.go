@@ -13,8 +13,8 @@ import (
 	"time"
 )
 
-const URL = "https://maps.googleapis.com/maps/api/staticmap?center=%f,%f&zoom=%d&size=576x576&maptype=satellite&key=%s"
-
+// const URL = "https://maps.googleapis.com/maps/api/staticmap?center=%f,%f&zoom=%d&size=576x576&maptype=satellite&key=%s"
+const URL = "https://restapi.amap.com/v3/staticmap?center=%f,%f&zoom=%d&size=576x576&maptypt=satellite&key=%s"
 // Returns a 512x512 image centered at the point using the specified zoom level and API key
 func GetSatelliteImage(point common.Point, zoom int, key string) image.Image {
 	url := fmt.Sprintf(URL, point.Y, point.X, zoom, key)
