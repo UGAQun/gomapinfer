@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/mitroadmaps/gomapinfer/common"
+	"github.com/UGAQun/gomapinfer/common"
 
 	"flag"
 	"fmt"
